@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'EuclidCircular';
+	src: url('./assect/font/EuclidCircularLight.woff');
+}
+
+@font-face {
+	font-family: 'Euclid Circular Light';
+	src: url('./assect/font/Euclid Circular A Light.ttf');
+}
+
+$black: #000000;
+$cyan: #5dd4d8;
+$pink: #fc307b;
+$radius: 10px;
+$liner-primary: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
+.top-banner {
+	height: 9px;
+	background-image: url(./assect/images/topborder.png);
+}
+
+.header {
+	height: 104px;
+	background-color: $black;
+	&-inner {
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+		display: flex;
+		padding: 12px 0;
+		align-items: center;
+		&__line {
+			margin: 0 45px;
+			width: 1px;
+			height: 43px;
+			background-color: #333333;
+		}
+		&__menu {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			& .icons {
+				display: flex;
+				margin-left: 10px;
+			}
+		}
+		&__toggle {
+			margin-left: auto;
+		}
+		&__btn {
+			background: $liner-primary;
+			width: 170px;
+			height: 39px;
+			outline: none;
+			border: none;
+			border-radius: $radius;
+			color: white;
+			font-weight: 600;
+			font-size: 16px;
+			font-family: 'Euclid Circular Light', Arial;
+			line-height: 24px;
+		}
+	}
+}
+.icon-social {
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1rem;
+	& > img {
+		height: 20px;
+	}
+}
+
+.text {
+	color: white;
+	margin-right: 43px;
+	line-height: 21px;
+	font-weight: 600;
+	font-family: 'Euclid Circular Light', Arial;
+}

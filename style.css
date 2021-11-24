@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'EuclidCircular';
+  src: url("./assect/font/EuclidCircularLight.woff");
+}
+
+@font-face {
+  font-family: 'Euclid Circular Light';
+  src: url("./assect/font/Euclid Circular A Light.ttf");
+}
+
+.top-banner {
+  height: 9px;
+  background-image: url(./assect/images/topborder.png);
+}
+
+.header {
+  height: 104px;
+  background-color: #000000;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-inner__line {
+  margin: 0 45px;
+  width: 1px;
+  height: 43px;
+  background-color: #333333;
+}
+
+.header-inner__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-inner__menu .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.header-inner__toggle {
+  margin-left: auto;
+}
+
+.header-inner__btn {
+  background: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
+  width: 170px;
+  height: 39px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Euclid Circular Light', Arial;
+  line-height: 24px;
+}
+
+.icon-social {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+.icon-social > img {
+  height: 20px;
+}
+
+.text {
+  color: white;
+  margin-right: 43px;
+  line-height: 21px;
+  font-weight: 600;
+  font-family: 'Euclid Circular Light', Arial;
+}
+/*# sourceMappingURL=style.css.map */
