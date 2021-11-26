@@ -246,6 +246,7 @@ body {
 	font-size: 42px;
 	font-family: 'EuclidCircular';
 }
+
 .bold {
 	font-weight: 600;
 }
@@ -360,6 +361,7 @@ body {
 	}
 }
 
+// Grid system
 .grid-container {
 	position: absolute;
 	grid-gap: 1rem;
@@ -409,7 +411,7 @@ body {
 .video {
 	display: flex;
 	background-color: white;
-	height: 38rem;
+	min-height: 38rem;
 	justify-content: center;
 	align-items: center;
 	background: url('./assect/images/back.png'),
@@ -450,6 +452,7 @@ body {
 	}
 }
 
+// Slider system
 .slider {
 	display: flex;
 	flex-direction: column;
@@ -468,6 +471,150 @@ body {
 	}
 }
 
+// Info section
 .info {
 	color: #fff;
+	&-title {
+		font-family: 'Gobold', Arial;
+		font-size: 30px;
+		margin: auto;
+		text-align: center;
+		max-width: 51rem;
+		letter-spacing: 0.5px;
+		line-height: 42px;
+		& > span {
+			color: $red;
+		}
+	}
+	&-container {
+		margin-top: 3rem;
+		flex-direction: row;
+		&__left,
+		&__right {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+		}
+		&__left {
+			border-right: 0.5px solid #333333;
+			padding-right: 4.3rem;
+		}
+		&__right {
+			border-left: 0.5px solid #333333;
+			padding-left: 4.3rem;
+		}
+	}
+
+	&-items {
+		display: flex;
+		margin-bottom: 5.5rem;
+
+		&__img {
+			width: 200px;
+			height: 200px;
+		}
+		&__text {
+			flex: 1;
+			padding-left: 2.5rem;
+			&-heading {
+				font-family: 'Gobold', Arial;
+				color: $red;
+				font-size: 26px;
+				margin-bottom: 1.3rem;
+			}
+			&-description {
+				font-family: 'EuclidCircular', Arial;
+				font-size: 18px;
+				line-height: 32px;
+			}
+		}
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+			& > div:last-child {
+				padding-left: 0;
+				padding-right: 2.5rem;
+			}
+		}
+		&:last-child {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.text-title-sm {
+	color: $red;
+	text-align: center;
+	font-family: 'Gobold', Arial;
+	font-size: 32px;
+	& > span {
+		color: white;
+	}
+}
+
+// Feature
+.feature {
+	display: flex;
+	flex-direction: column;
+	padding-top: 5rem;
+	&-container {
+		margin: 2rem 0;
+		padding: 2rem 0;
+		border-top: 1px solid #333333;
+		border-bottom: 1px solid #333333;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		&__items {
+			width: 16.6667%;
+			padding: 2rem;
+			align-self: center;
+			& > img {
+				max-width: 150px;
+			}
+		}
+	}
+}
+
+.world {
+	width: 100%;
+	&-text {
+		color: white;
+		font-family: 'EuclidCircular';
+		text-align: center;
+		font-size: 22px;
+		max-width: 51rem;
+		line-height: 36px;
+		margin: 0 auto;
+		margin-top: 2rem;
+	}
+	&-container {
+		max-width: 1000px;
+		margin: 0 auto;
+		background-color: rgba(0, 0, 0, 0.9);
+		background: url('./assect/images/earth.png') no-repeat;
+		&__title {
+			font-family: 'Gobold', Arial;
+			color: $cyan;
+			font-size: 20px;
+		}
+		&__items {
+			display: flex;
+			flex-direction: column;
+			padding: 1rem 0;
+		}
+		&__list {
+			padding: 0;
+			& > li {
+				color: white;
+				list-style: none;
+				&::before {
+					content: '\2022';
+					color: $red;
+					font-weight: bold;
+					display: inline-block;
+					width: 1em;
+				}
+			}
+		}
+	}
 }
