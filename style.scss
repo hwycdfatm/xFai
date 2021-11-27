@@ -32,10 +32,6 @@ body {
 	line-height: 1.5;
 }
 
-a:not([class]) {
-	text-decoration-skip-ink: auto;
-}
-
 img,
 picture {
 	width: 100%;
@@ -65,9 +61,13 @@ $cyan: #5dd4d8;
 $red: #fc307b;
 $radius: 10px;
 $liner-primary: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
-$breakpoint: 1280px;
 body {
 	background-color: $black;
+}
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .top-banner {
@@ -138,6 +138,9 @@ body {
 
 		&__toggle {
 			margin-left: auto;
+			display: flex;
+			justify-items: center;
+			align-items: center;
 		}
 		&__btn {
 			width: 170px;
@@ -217,6 +220,7 @@ body {
 	background-color: $black;
 	min-height: 200vh;
 	margin-top: 100px;
+	overflow: hidden;
 }
 
 .text-heading {
@@ -320,6 +324,7 @@ body {
 		padding: 1.5rem 0;
 		position: relative;
 		z-index: 2;
+		background-color: rgba(0, 0, 0, 0.753);
 		&__title {
 			font-size: 65px;
 			line-height: 80px;
@@ -441,6 +446,9 @@ body {
 			}
 		}
 	}
+}
+.overflow-hidden {
+	overflow: hidden;
 }
 
 #dlo {
@@ -770,6 +778,86 @@ body {
 			&:last-child {
 				color: $cyan;
 			}
+		}
+	}
+}
+
+// Hamburger
+
+.hamburger {
+	width: 32px;
+	height: 32px;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 20;
+	display: none;
+	&-line {
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+		transition: all 0.3s ease-in-out;
+		&::before,
+		&::after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 2px;
+			background-color: #fff;
+			transition: all 0.3s ease-in-out;
+		}
+		&::before {
+			top: 10px;
+		}
+		&::after {
+			bottom: 10px;
+		}
+	}
+	&.active {
+		.hamburger-line {
+			background-color: transparent;
+
+			&::before {
+				top: 0;
+				transform: rotate(45deg);
+			}
+			&::after {
+				bottom: 0;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+// sidebar
+.side-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $black;
+	z-index: 10;
+	transform: translateX(-100%);
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+	&.active {
+		transform: translateX(0%);
+	}
+	& > ul > li {
+		padding: 1rem 2rem;
+		text-align: center;
+		& > a {
+			color: #fff;
+			font-size: 2rem;
+			font-family: 'EuclidCircular', Arial;
+			text-decoration: none;
+			text-align: center;
 		}
 	}
 }

@@ -65,3 +65,13 @@ $('.slider-container').slick({
 
 // AOS
 AOS.init()
+
+// sidebar toggle
+
+const sidebarToggle = $('#sidebar-toggle')
+const sidebar = $('.side-bar')
+sidebarToggle.on('click', () => {
+	sidebarToggle.toggleClass('active')
+	sidebar.toggleClass('active')
+	$('body').toggleClass('overflow-hidden')
+})
