@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xFai</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -51,6 +53,7 @@
             </div>
         </div>
         <div class="content">
+            <!-- First -->
             <section>
                 <div class="bgc"></div>
                 <div class="container text-wrapper">
@@ -63,6 +66,7 @@
                     </button>
                 </div>
             </section>
+            <!-- Grid -->
             <section>
                 <div class="container">
                     <div class="flex">
@@ -82,25 +86,25 @@
                         </div>
                         <div class="right-box">
                             <div class="grid-container">
-                                <a href="#" class="grid-container__btn">
+                                <a href="#frees" class="grid-container__btn">
                                     <img src="./assect/images/Fees.png" alt="icon">
                                 </a>
-                                <a href="#" class="grid-container__btn">
+                                <a href="#brick" class="grid-container__btn">
                                     <img src="./assect/images/Brick.png" alt="icon">
                                 </a>
-                                <a href="#" class="grid-container__btn">
+                                <a href="#safe" class="grid-container__btn">
                                     <img src="./assect/images/Safe.png" alt="icon">
                                 </a>
-                                <a href="#" class="grid-container__btn">
+                                <a href="#sythetic" class="grid-container__btn">
                                     <img src="./assect/images/Sythetic.png" alt="icon">
                                 </a>
-                                <a href="#" class="grid-container__btn">
+                                <a href="#anti" class="grid-container__btn">
                                     <img src="./assect/images/Anti.png" alt="icon">
                                 </a>
-                                <a href="#" class="grid-container__btn">
+                                <a href="#dlo" class="grid-container__btn">
                                     <img src="./assect/images/DLO.png" alt="icon">
                                 </a>
-                                <a href="#" class="grid-container__btn">
+                                <a href="#force" class="grid-container__btn">
                                     <img src="./assect/images/Force.png" alt="icon">
                                 </a>
 
@@ -109,7 +113,8 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <!-- Video -->
+            <section data-aos="fade-up">
                 <div class="container">
                     <div class="video padding-5">
                         <div class="video-container">
@@ -133,22 +138,52 @@
                     </div>
                 </div>
             </section>
-            <!-- Video -->
-            <section>
+            <!-- Slider -->
+            <section data-aos="fade-up" id="dlo">
                 <div class="container">
-                    <div class="video padding-5">
+                    <div class="world items-center">
+                        <h1 class="slider-title">
+                            HOW THE <span>DEX LIQUIDITY ORACLE</span> (DLO) WORKS
+                        </h1>
                         <div class="slider">
-                            <h1 class="slider-title">
-                                HOW THE <span>DEX LIQUIDITY ORACLE</span> (DLO) WORKS
-                            </h1>
                             <div class="slider-container">
+                                <div class="slider-container__items">
+                                    <p class="slider-container__text">
+                                        <span>Step 1</span>: Users add their tokens (small cap tokens,
+                                        USDT, ETH, etc.) to the DLO liquidity pools.
+                                    </p>
+                                    <div class="slider-container__img">
+                                        <img src="./assect/images/step1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider-container__items">
+                                    <p class="slider-container__text">
+                                        <span>Step 2</span>: The DLO takes tokens in and out of these
+                                        pools continously and deploys them for synchronizing the curves.
+                                    </p>
+                                    <div class="slider-container__img">
+                                        <img src="./assect/images/step2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider-container__items">
+                                    <p class="slider-container__text">
+                                        The user only needs to provide one token at a time and is never
+                                        exposed to more than one token at a time!
+                                    </p>
+                                    <div class="slider-container__img">
+                                        <img src="./assect/images/step3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-dots">
 
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section>
+            <!-- Info -->
+            <section data-aos="fade-up">
                 <div class="container">
                     <div class="info">
                         <p class="info-title">XFAI’S <span>UNIQUE FEATURES</span> ALL CONTRIBUTE TO A SEAMLESS AND
@@ -157,7 +192,7 @@
                                 LEADING</span> APPROACH CREATES A VIRTUOUS CYCLE WHICH BENEFITS EVERYONE.</p>
                         <div class="info-container flex">
                             <div class="info-container__left">
-                                <div class="info-items">
+                                <div class="info-items" id="sythetic">
                                     <div class="info-items__img">
                                         <img src="./assect/images/Icon-Sythetic.png" alt="icon">
                                     </div>
@@ -169,7 +204,7 @@
                                             AND DEX liquidity on chain</span>
                                     </div>
                                 </div>
-                                <div class="info-items">
+                                <div class="info-items" id="anti">
                                     <div class="info-items__img">
                                         <img src="./assect/images/Icon-Slippagee.png" alt="icon">
                                     </div>
@@ -180,7 +215,7 @@
                                             tokens with ease at a lower price.</span>
                                     </div>
                                 </div>
-                                <div class="info-items">
+                                <div class="info-items" id="brick">
                                     <div class="info-items__img">
                                         <img src="./assect/images/Icon-Brick.png" alt="icon">
                                     </div>
@@ -194,7 +229,7 @@
                                 </div>
                             </div>
                             <div class="info-container__right">
-                                <div class="info-items">
+                                <div class="info-items" id="safe">
                                     <div class="info-items__img">
                                         <img src="./assect/images/Icon-Safe.png" alt="icon">
                                     </div>
@@ -206,7 +241,7 @@
                                             AND DEX liquidity on chain</span>
                                     </div>
                                 </div>
-                                <div class="info-items">
+                                <div class="info-items" id="fees">
                                     <div class="info-items__img">
                                         <img src="./assect/images/Icon-Fees.png" alt="icon">
                                     </div>
@@ -218,7 +253,7 @@
                                             returns.</span>
                                     </div>
                                 </div>
-                                <div class="info-items">
+                                <div class="info-items" id="force">
                                     <div class="info-items__img">
                                         <img src="./assect/images/Icon-Force.png" alt="icon">
                                     </div>
@@ -234,7 +269,8 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <!-- Feartured -->
+            <section data-aos="fade-up">
                 <div class="container">
                     <div class="feature">
                         <p class="text-title-sm">
@@ -278,7 +314,8 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <!-- World -->
+            <section data-aos="fade-up">
                 <div class="container">
                     <div class="world">
 
@@ -355,7 +392,8 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <!-- Backed -->
+            <section data-aos="fade-up">
                 <div class="container">
                     <div class="backed-by">
                         <div class="backed-by__container">
@@ -404,7 +442,7 @@
                 </div>
             </section>
         </div>
-        <div class="footer">
+        <div class="footer" data-aos="fade-up">
             <div class="footer-container">
                 <a href="#" class="footer-icons">
                     <img src="./assect/images/FooterIcon-Telegram.svg" alt="">
@@ -437,6 +475,10 @@
             </div>
         </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./main.js"></script>
 
 </html>

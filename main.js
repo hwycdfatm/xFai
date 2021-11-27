@@ -52,3 +52,16 @@ const dataInfo = [
 			'Normal oracles update only the price data on-chain. The synthetic curve feature constantly synchronizes BOTH the price AND DEX liquidity on chain',
 	},
 ]
+
+// Slick
+$('.slider-container').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	dots: true,
+	appendDots: $('.slider-dots'),
+})
+
+// AOS
+AOS.init()
