@@ -45,7 +45,6 @@ textarea,
 select {
 	font: inherit;
 }
-
 @font-face {
 	font-family: 'EuclidCircular';
 	src: url('./assect/font/EuclidCircularA-Light.woff') format('woff');
@@ -401,7 +400,7 @@ body {
 		}
 	}
 }
-.padding-5 {
+.py-5 {
 	padding: 5rem 0;
 }
 
