@@ -8,6 +8,24 @@ window.onscroll = function () {
 		header.classList.remove('active')
 	}
 }
+
+// scroll to top of header
+const scrollToTop = document.querySelector('.scroll-to-top')
+scrollToTop.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+	})
+})
+
+// show and hide button scroll to top when scroll
+window.addEventListener('scroll', () => {
+	if (window.pageYOffset > 500) {
+		scrollToTop.classList.add('active')
+	} else {
+		scrollToTop.classList.remove('active')
+	}
+})
 const dataInfo = [
 	{
 		img: './assect/images/Icon-Sythetic.png',

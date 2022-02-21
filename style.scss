@@ -841,22 +841,43 @@ body {
 	z-index: 10;
 	transform: translateX(-100%);
 	transition: all 0.3s ease-in-out;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	overflow: auto;
+
 	&.active {
 		transform: translateX(0%);
 	}
-	& > ul > li {
-		padding: 1rem 2rem;
-		text-align: center;
-		& > a {
-			color: #fff;
-			font-size: 2rem;
-			font-family: 'EuclidCircular', Arial;
-			text-decoration: none;
+	& > ul {
+		min-height: 100vh;
+		padding: 0;
+		margin: 0;
+		margin: 2rem 0;
+		& > li {
+			padding: 1rem 2rem;
 			text-align: center;
+			list-style: none;
+			& > a {
+				color: #fff;
+				font-size: 2rem;
+				font-family: 'EuclidCircular', Arial;
+				text-decoration: none;
+				text-align: center;
+			}
 		}
+	}
+}
+
+.scroll-to-top {
+	position: fixed;
+	width: 2rem;
+	height: 2rem;
+	background: $liner-primary;
+	bottom: 3rem;
+	padding: 0.2rem;
+	right: 3rem;
+	z-index: 20;
+	cursor: pointer;
+	display: none;
+	&.active {
+		display: block;
 	}
 }
